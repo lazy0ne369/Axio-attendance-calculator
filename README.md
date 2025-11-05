@@ -1,6 +1,7 @@
 # Axio: L-T-P-S Attendance Calculator
 
 Axio is a modern web application for calculating weighted attendance across different class types (Lecture, Tutorial, Practical, Skill) with precision and ease.
+https://axio-attendance-calculator.vercel.app/
 
 ![Axio Logo](./public/favicon.svg)
 
