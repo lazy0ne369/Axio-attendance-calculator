@@ -1,78 +1,70 @@
 # Axio: L-T-P-S Attendance Calculator
 
-Axio is a modern web application for calculating weighted attendance across different class types (Lecture, Tutorial, Practical, Skill) with precision and ease.
-https://axio-attendance-calculator.vercel.app/
+Axio is a premium, interactive web application designed for students to calculate and simulate their attendance with precision. It accounts for weighted class types and provides real-time feedback on academic requirements.
 
-![Axio Logo](./public/favicon.svg)
+[Live Demo](https://axio-attendance-calculator.vercel.app/)
 
-## Features
+## 🚀 Key Features
 
-- **Weighted Calculation**: Account for different class weights (L: 1.0, T: 1.0, P: 0.5, S: 0.25)
-- **Flexible Selection**: Choose which class types to include in your calculation
-- **Real-time Results**: Get instant feedback on your attendance status
-- **Modern UI**: Clean, intuitive interface with responsive design
+- **Interactive Attendance Simulator**: Plan your remaining classes with real-time sliders and a dynamic bar chart.
+- **Weighted Calculation**: Automatically handles complex class weights (Lecture: 1.0, Tutorial: 1.0, Practical: 0.5, Skill: 0.25).
+- **Dark Mode Support**: Sleek, glassmorphic theme toggle for late-night study sessions.
+- **Local Data Persistence**: Your attendance inputs and theme preferences are saved automatically across sessions.
+- **Premium UI/UX**: Modern design with 3D hover effects, smooth transitions, and celebratory confetti burst upon reaching goals.
+- **Social Integration**: Enhanced footer with LinkedIn, Instagram, and GitHub repository links.
 
-## Getting Started
+## 🛠️ Getting Started
 
 ### Installation
 
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lazy0ne369/axio-attendance-calculator.git
+   cd axio-attendance-calculator
+   ```
 
-```bash
-git clone https://github.com/lazy0ne369/axio-attendance-calculator.git
-cd axio-attendance-calculator/ltps-calc
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. Install dependencies
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm install
-```
+### Environment Variables
 
-3. Start the development server
-
-```bash
-npm run dev
-```
-
-## Environment Variables
-
-Create a `.env` file in the `ltps-calc` directory (never commit it):
-
-```
+Create a `.env` file in the root directory (never commit it):
+```env
 VITE_WEB3FORMS_KEY=your-web3forms-access-key
 ```
+Obtain a free key at: [web3forms.com](https://web3forms.com)
 
-You can obtain a key free at: https://web3forms.com
+## 💻 Technical Stack
 
-## Technology Stack
+- **React 19**: Modern component-based architecture.
+- **Vite**: Ultra-fast build tool and development server.
+- **Glassmorphic CSS**: Advanced CSS variables and backdrop filters for a premium feel.
+- **React Router**: Seamless Single Page Application (SPA) navigation.
 
-- **React 19**: Leveraging the latest React features for optimal performance
-- **Vite**: Fast build tool and development server
-- **React Router**: For seamless navigation between pages
-- **Modern CSS**: Utilizing advanced CSS features for sleek UI
+## 📈 Usage
 
-## Usage
+1. **Calculate**: Select your class types, enter your current attendance, and get your weighted percentage.
+2. **Simulate**: Jump into the "Classes to Go" simulator. Drag sliders to plan your attendance for the rest of the term.
+3. **Persist**: Refresh with confidence—your data is saved locally.
+4. **Celebrate**: Hit your 85% goal and watch the confetti fly! 🎉
 
-1. Start by selecting which class types to include in your calculation
-2. Enter the number of classes attended and total classes for each selected type
-3. Calculate your weighted attendance percentage
-4. See your status (Meeting requirement, Close to requirement, Below requirement)
+## 🚢 Deployment (Vercel)
 
-## Deployment (Vercel)
+1. Connect your GitHub repository to Vercel.
+2. Add `VITE_WEB3FORMS_KEY` to the Environment Variables in Vercel settings.
+3. Vercel will automatically detect Vite and deploy your application.
 
-1. Push the repository to GitHub (already done if you're reading this)
-2. Go to https://vercel.com and import the repo
-3. Set Environment Variable in Vercel project settings:
-   - Key: `VITE_WEB3FORMS_KEY`
-   - Value: (your Web3Forms access key)
-4. Deploy – Vercel will detect Vite automatically
-5. Test the live Feedback form; you should receive an email
+## 🤝 Contributing
 
-## Contributing
+Suggestions and bug reports are welcome! Feel free to open an issue or submit a pull request.
 
-Issues and suggestions welcome. Open an issue or submit a PR.
+## 📄 License
 
-## License
-
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

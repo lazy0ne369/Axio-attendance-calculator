@@ -88,6 +88,7 @@ ${formData.message}
 
   return (
     <div className="page-container">
+      <ThemeToggle />
       <div className="container">
         <div className="card">
           <Logo />

@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../components/Logo";
 import Footer from "../components/Footer";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function SelectTypes({ selectedTypes, setSelectedTypes }) {
+  const location = useLocation();
+  const destination = location.state?.destination || "/calculator";
+
   const options = [
     { name: "Lecture", description: "Regular theory classes" },
     { name: "Tutorial", description: "Problem-solving sessions" },
@@ -20,12 +24,13 @@ export default function SelectTypes({ selectedTypes, setSelectedTypes }) {
 
   return (
     <div className="page-container">
+      <ThemeToggle />
       <div className="container">
         <div className="card">
           <Logo />
           <h2>Choose Class Types</h2>
           <p>Select the types of classes you want to include in your attendance calculation:</p>
-          
+
           <div className="form-group">
             {options.map((option) => (
               <label key={option.name}>
@@ -42,7 +47,7 @@ export default function SelectTypes({ selectedTypes, setSelectedTypes }) {
             ))}
           </div>
 
-          <Link to="/calculator">
+          <Link to={destination}>
             <button disabled={selectedTypes.length === 0}>
               Continue ({selectedTypes.length} selected)
             </button>
